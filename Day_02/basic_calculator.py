@@ -22,7 +22,6 @@ while status == "Y":
         b = float(b)
     except ValueError:
             print("Please enter a valid number. Please try again.")
-            
     if opt == "add" or opt =="+":
         add(a,b)
     elif opt == "sub" or opt =="-":
