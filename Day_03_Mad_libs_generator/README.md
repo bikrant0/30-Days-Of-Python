@@ -2,7 +2,7 @@
 
 A console-based Mad libs generator built using pure Python. This project features user input validation, dynamic random strings or words generation, and a continuous main game loop.
 
-<img src="demo.png" alt="Mad Libs Demo" width="600">
+<img src="demo.png" alt="Mad Libs Demo">
 <p><i>Example gameplay showing input validation and random words</i></p>
 
 ## How to Run
@@ -22,5 +22,6 @@ A console-based Mad libs generator built using pure Python. This project feature
 - [**DONE**] Committed to GitHub.
 
 ## Demo
+
 ![Mad Libs Generator Demo](demo.png)
 *The game running in terminal with input validation and random word generation*
