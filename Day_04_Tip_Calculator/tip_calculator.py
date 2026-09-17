@@ -15,10 +15,21 @@ while status == "Y":
         except ValueError:
             print("That's not a valid number! ")
             continue
+        
+    while status != "Y":
+        status = input("Do you want to TIP again. Type Y/N. ").upper()
+        try:
+            status = str(status)
+            break
+        except ValueError:
+            print("That's not a valid string. Just type Y/N")
+            continue
 
     totaltip = round(totaltip,2) + round(totalamount,2)
-    print(f"You have tipped ${totalamount} abd total tip you gave is ${round(totaltip,2)}.")    
+    print(f"You have tipped ${totalamount} and total tip you gave is ${round(totaltip,2)}.")    
 
-    status = input("Do you want to TIP again. Type Y/N. ").upper()
+    
+    
+            
 
 print("Thanks for Tippping. Please come again!")
