@@ -23,6 +23,6 @@ A command-line tool that reads a text file and extracts all valid email addresse
   - How to use the `re` module, specifically `re.findall(pattern, text)` to extract data based on a regex pattern.
   - The importance of using `file.read()` when you need the entire file as one continuous block of text.
   - How to properly iterate through a list of results using a `for` loop.
-  - The difference between storing a list of items vs. storing the integer count of those items.
+
 - **Time spent:** 1.5 hours
 - [**DONE**] Committed to GitHub.
