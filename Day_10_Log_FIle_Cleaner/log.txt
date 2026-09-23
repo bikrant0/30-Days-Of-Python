@@ -1,0 +1,19 @@
+[2026-09-23 22:15:01] [INFO]  [worker-0] Initializing database connection pool to db-prod-01.internal...
+[2026-09-23 22:15:03] [DEBUG] [worker-0] Connection string resolved. Timeout set to 30000ms. Keep-alive: true.
+[2026-09-23 22:15:04] [INFO]  [worker-0] Migration sequence successfully checked. App is UP.
+[2026-09-23 22:15:12] [INFO]  [http-nio-8080-exec-1] Incoming request: POST /api/v1/checkout user_id=89231
+[2026-09-23 22:15:12] [DEBUG] [http-nio-8080-exec-1] Fetching inventory for SKU-9021... cache HIT.
+[2026-09-23 22:15:13] [WARNING] [http-nio-8080-exec-1] Payment gateway response delayed. Latency: 1240ms (Threshold: 1000ms). Retry 1 of 3 initiated.
+[2026-09-23 22:15:14] [DEBUG] [http-nio-8080-exec-1] Retrying payment payload swap. Session active.
+[2026-09-23 22:15:15] [ERROR] [http-nio-8080-exec-1] Checkout transaction failed for user_id=89231. Gateway disconnected unexpectedly.
+    org.gateway.exception.ConnectException: Connection refused (Connection timed out)
+        at org.gateway.client.NettyTransport.connect(NettyTransport.java:142)
+        at org.gateway.client.GatewayService.charge(GatewayService.java:89)
+        at com.app.checkout.CheckoutController.processOrder(CheckoutController.java:312)
+[2026-09-23 22:15:15] [INFO]  [http-nio-8080-exec-2] Incoming request: GET /api/v1/healthz
+[2026-09-23 22:15:15] [INFO]  [http-nio-8080-exec-2] Health check passed. Status 200 OK.
+[2026-09-23 22:15:18] [WARNING] [scheduler-thread-1] Memory threshold exceeded 85%. Free memory: 241MB. Triggering explicit garbage collection...
+[2026-09-23 22:15:19] [DEBUG] [scheduler-thread-1] GC freed 184MB in 42ms. Heap stable.
+[2026-09-23 22:15:32] [INFO]  [http-nio-8080-exec-3] Incoming request: GET /api/v1/metrics
+[2026-09-23 22:15:40] [ERROR] [worker-1] Failed to parse message batch from Kafka topic 'user-analytics'. Message dropped. Offset: 4410294.
+
