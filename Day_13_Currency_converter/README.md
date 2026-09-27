@@ -1,4 +1,4 @@
-# Day 12: Weather App (CLI)
+# Day 13: Currency Converter
 
 A command-line currency converter that reads currency data values from an api or url and converts the amount user's inputted according to their choice. Built as part of the **30 Days of Python Challenge**.
 
@@ -13,7 +13,8 @@ A command-line currency converter that reads currency data values from an api or
 
 ## Daily Developer Log
 
-### Day 12: Weather App (CLI)
+### Day 13: Currency Converter
+
 
 - **What I built:** A CLI app that calls API, parses dictionary parsing and conversion of currency and amount.
 - **What broke / what confused me:** 
