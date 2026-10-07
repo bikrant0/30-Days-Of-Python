@@ -10,10 +10,10 @@ A modular, object-oriented command-line Bank Account System. It demonstrates cla
 3. The script will automatically initialize sample data (Customers, Employees, Managers, and Accounts) and run a series of tests to demonstrate the system's features.
 
 ## Project Structure
+
 Day_15_Bank_Account_System/
 ├── bank_account_system.py # Main application script with all classes
 └── README.md # This file
-
 
 ## Features
 
@@ -28,12 +28,12 @@ Day_15_Bank_Account_System/
 ### Day 15: Bank Account System
 
 - **What I built:** A complete Object-Oriented Bank Account System featuring a hierarchy of People (Customers, Employees, Managers) and financial Accounts (Savings, Checking).
-- **What broke / what confused me:** 
+- **What broke / what confused me:**
   - Initially trying to make `Customer` and `Employee` inherit directly from a `Bank` class, which created a confusing "is-a" vs "has-a" relationship.
   - Passing too many arguments to `super().__init__()` when the parent class didn't expect them.
   - Accidentally nesting the `Savings` class *inside* `BankAccount`, which prevented proper inheritance.
   - Placing the `if __name__ == "__main__":` execution block at the top of the file, causing `NameError`s because the classes weren't defined yet.
-- **What I understand better now:** 
+- **What I understand better now:**
   - How to properly design an OOP hierarchy: separating the "Person" (who they are) from the "Account" (what they have).
   - How `super().__init__()` strictly requires matching the parent class's expected arguments.
   - The importance of the `if __name__ == "__main__":` guard and keeping execution logic at the very bottom of the file.
